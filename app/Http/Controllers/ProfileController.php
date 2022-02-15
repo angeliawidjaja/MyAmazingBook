@@ -27,7 +27,6 @@ class ProfileController extends Controller
             'last_name'=> ['required', 'alpha_num', 'max:25'],
             'gender' => ['required', 'in:Male,Female'],
             'email' => ['required', 'email'],
-            'role' => ['required', 'in:User,Admin'],
             'password' => ['required', 'alpha_num', 'min:8'],
             'display_picture_link' => ['required'],
             'display_picture_link.*' => ['required', 'mimes:jpeg,jpg,png,svg']
@@ -43,7 +42,6 @@ class ProfileController extends Controller
             $user->password = Hash::make($request->password);
         }
 
-        $role = Role::where('role_desc', $data['role'])->first();
         $gender = Gender::where('gender_desc', $data['gender'])->first();
 
         session([
@@ -57,7 +55,6 @@ class ProfileController extends Controller
             'last_name' => $data['last_name'], 
             'email' => $data['email'],
             'display_picture_link' => $imagePath,
-            'role_id' => $role->id,
             'gender_id' => $gender->id
         ]);
         

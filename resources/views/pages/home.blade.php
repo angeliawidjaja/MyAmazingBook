@@ -4,10 +4,10 @@
     <div class="container my-5">
         <div class="row">
             <div class="col">
-                <h5 class="text-center">@lang('messages.title')</h5>
+                <h5 class="text-center">@lang('messages.author')</h5>
             </div>
             <div class="col">
-                <h5 class="text-center">@lang('messages.author')</h5>
+                <h5 class="text-center">@lang('messages.title')</h5>
             </div>
         </div>
         <hr style="height: 1px; margin-top: 0vw; margin-bottom: 1vw;">

@@ -19,7 +19,7 @@
                     </div>
                     <center class="col">
                         @if (Auth::user()->id != $u->id)
-                            <a href="{{route('update_account', ['id'=>$u->id])}}}}">@lang('messages.update_role')</a>
+                            <a href="{{route('update_account', ['id'=>$u->id])}}">@lang('messages.update_role')</a>
                             <a href="{{route('delete_account', ['id'=>$u->id])}}">@lang('messages.delete')</a>
                         @else
                             <span class="text-primary fw-bold">@lang('messages.this_account')</span>
