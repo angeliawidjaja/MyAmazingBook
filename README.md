@@ -1,6 +1,6 @@
 <h1>2301854492</h1>
 <h1>Angelia</h1>
-<h1>Kelas LF01-LEC</h1>
+<h1>Kelas LE01-LEC</h1>
 <h1>Dosen: Pak Henry Chong</h1>
 
 <h2>Link Video Penjelasan:</h2>
